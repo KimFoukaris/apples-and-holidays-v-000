@@ -72,7 +72,7 @@ def all_supplies_in_holidays(holiday_hash)
       holidays_hash.each do |holiday, supplies|
           holiday_array = holiday.to_s.split
           holiday_array.collect {|word| word.capitalize!}
-          holiday = holiday_array.join(" ")
+          holiday = holiday_array.join(", ")
           supply_list = supplies.join(", ")
           puts "  #{holiday}: #{supply_list}"
 
